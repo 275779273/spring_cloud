@@ -9,7 +9,7 @@ datasource:
 
 spring:
   application:
-    name: test # 对外暴露的服务名称
+    name: test2 # 对外暴露的服务名称
 
   datasource: # 数据库配置
     driver-class-name: com.mysql.jdbc.Driver
@@ -36,14 +36,14 @@ eureka:
     healthcheck:
       enabled: true
   instance:
-    instance-id: 测试服务-8001-Hystrix  # 人性化显示出服务的信息（带hystrix）
+    instance-id: 测试服务-8002-Hystrix  # 人性化显示出服务的信息（带hystrix）
     prefer-ip-address: true    # 访问路径可显示ip地址
     lease-renewal-interval-in-seconds: 2
     lease-expiration-duration-in-seconds: 5
 
 # 使用actuator来展示项目的基本信息
 info:
-  author.name: test
+  author.name: test2
   app.name: microservice
   server.port: ${server.port}
   application.name: ${spring.application.name}
