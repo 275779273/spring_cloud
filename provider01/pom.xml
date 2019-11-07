@@ -53,6 +53,10 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+        </dependency>
         <!--<dependency>
             <groupId>com.zrzk</groupId>
             <artifactId>provider02</artifactId>

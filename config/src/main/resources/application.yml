@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/275779273/config.git
+          username: 275779273
+          password: bie1997129
+
+# 客户端注册进eureka服务列表里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/,http://127.0.0.1:7002/eureka/,http://127.0.0.1:7003/eureka/
+server:
+  port: 9000
