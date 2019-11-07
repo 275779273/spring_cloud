@@ -9,10 +9,15 @@ spring:
           username: 275779273
           password: bie1997129
 
-# ¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÀï
+#  å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨é‡Œ
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka/,http://127.0.0.1:7002/eureka/,http://127.0.0.1:7003/eureka/
 server:
   port: 9000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
